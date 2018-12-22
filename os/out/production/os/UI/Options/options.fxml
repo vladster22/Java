@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefWidth="375.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Options.Controller">
+   <children>
+      <HBox>
+         <children>
+            <Label prefWidth="80.0" text="Filename" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="filename" disable="true" editable="false" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefWidth="80.0" text="Username" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="username" disable="true" editable="false" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox>
+         <children>
+            <Label prefWidth="80.0" text="Create" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="dateCreate">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefWidth="80.0" text="Read" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="dateRead">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefWidth="80.0" text="Update" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="dateUpdate">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox>
+         <children>
+            <Label prefWidth="80.0" text="File size" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="fileSize">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox>
+         <children>
+            <Label prefWidth="80.0" text="Attributes" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <HBox>
+               <children>
+                  <CheckBox fx:id="system" disable="true" mnemonicParsing="false" text="System">
+                     <font>
+                        <Font name="Consolas" size="12.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="hidden" disable="true" mnemonicParsing="false" text="Hidden">
+                     <font>
+                        <Font name="Consolas" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="remove" disable="true" mnemonicParsing="false" text="Remove">
+                     <font>
+                        <Font name="Consolas" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="text" disable="true" mnemonicParsing="false" text="Text">
+                     <font>
+                        <Font name="Consolas" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT">
+         <items>
+            <Button mnemonicParsing="false" onAction="#close" prefWidth="75.0" text="Close">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="save" disable="true" mnemonicParsing="false" onAction="#save" prefWidth="75.0" text="Save">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Button>
+         </items>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </ToolBar>
+   </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</VBox>

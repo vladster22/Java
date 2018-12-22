@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<SplitPane dividerPositions="0.75" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Home.Controller">
+   <items>
+      <VBox>
+         <children>
+            <TextArea fx:id="answers" editable="false" focusTraversable="false" prefHeight="200.0" wrapText="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </TextArea>
+            <TextField fx:id="command" onAction="#handle">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <Accordion maxWidth="300.0" minWidth="200.0">
+        <panes>
+          <TitledPane animated="false" text="Users">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <content>
+                  <ListView fx:id="users" />
+               </content>
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" text="Files">
+               <content>
+                  <ListView fx:id="files" />
+               </content>
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" text="Processes">
+               <content>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label text="Current">
+                                 <font>
+                                    <Font name="Consolas" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="currentProcess">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Consolas" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <ListView fx:id="processes" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="-10.0" left="-10.0" right="-10.0" top="10.0" />
+                           </VBox.margin>
+                        </ListView>
+                     </children>
+                  </VBox>
+               </content>
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </TitledPane>
+        </panes>
+      </Accordion>
+   </items>
+</SplitPane>
